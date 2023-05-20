@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".OTPFragment">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo"
+        android:importantForAccessibility="no" />
+
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/back_otp"
+        android:src="@drawable/back_black"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:importantForAccessibility="no"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/card_blue"
+            android:layout_centerVertical="true"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/tv_qopay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qopay"
+                android:layout_centerHorizontal="true"
+                android:textSize="60sp"
+                android:fontFamily="@font/yusei_magic"
+                android:textStyle="bold"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/white"/>
+
+<!--            <com.chaos.view.PinView-->
+<!--                android:id="@+id/pin_view"-->
+<!--                android:layout_below="@id/tv_qopay"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                app:cursorColor="@color/black"-->
+<!--                android:inputType="number"-->
+<!--                android:textSize="24sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                app:lineColor="@color/white"-->
+<!--                android:itemBackground="@color/white"-->
+<!--                app:itemRadius="20sp"-->
+<!--                app:itemCount="4"-->
+<!--                android:cursorVisible="true"-->
+<!--                app:viewType="rectangle"-->
+<!--                app:itemSpacing="15dp"-->
+<!--                android:elevation="10dp"-->
+<!--                app:itemHeight="70dp"-->
+<!--                app:itemWidth="70dp">-->
+<!--            </com.chaos.view.PinView>-->
+
+            <com.chaos.view.PinView
+                android:layout_below="@id/tv_qopay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:id="@+id/pin_view"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:hint="0000"
+                android:inputType="number"
+                android:itemBackground="@color/white"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:itemRadius="20sp"
+                app:cursorColor="@color/black"
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="false"
+                app:itemCount="4"
+                app:itemHeight="70dp"
+                app:itemSpacing="15dp"
+                app:itemWidth="70dp"
+                app:lineColor="@color/white"
+                app:lineWidth="2dp"
+                app:viewType="rectangle" />
+
+
+            <TextView
+                android:id="@+id/masukkan_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/masukkan_pin"
+                android:layout_below="@id/pin_view"
+                android:layout_marginTop="30dp"
+                android:textSize="35sp"
+                android:fontFamily="@font/yusei_magic"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:id="@+id/btn_konfirmasi"
+                android:layout_marginTop="150sp"
+                android:text="@string/konfirmasi"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/yusei_magic"
+                android:background="@drawable/card"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/white"
+                android:layout_below="@id/masukkan_pin"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".HomeScreenFragment">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/iv_back_home_screen"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:src="@drawable/back_black"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:importantForAccessibility="no" />
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/iv_back_home_screen"
+        android:padding="30dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_qola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qola"
+            android:textStyle="bold"
+            android:fontFamily="@font/yusei_magic"
+            android:textSize="50sp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img"
+            android:layout_marginBottom="20dp"
+            android:importantForAccessibility="no" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pilih_layanan"
+            android:layout_width="280sp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20sp"
+            android:text="@string/pilih_layanan"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/yusei_magic"
+            android:background="@drawable/card"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_status_laundry"
+            android:layout_width="280sp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20sp"
+            android:text="@string/status_laundry"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/yusei_magic"
+            android:background="@drawable/card"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"/>
+
+    </LinearLayout>
+</RelativeLayout>

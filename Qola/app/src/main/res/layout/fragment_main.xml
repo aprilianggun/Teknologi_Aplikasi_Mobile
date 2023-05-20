@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qola"
+            android:textStyle="bold"
+            android:fontFamily="@font/yusei_magic"
+            android:textSize="60sp"
+            android:layout_marginTop="-60dp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:layout_width="300sp"
+            android:layout_height="250sp"
+            android:layout_marginTop="-50dp"
+            android:src="@drawable/logo"
+            android:importantForAccessibility="no"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qodrat_laundry"
+            android:textStyle="bold"
+            android:fontFamily="@font/yusei_magic"
+            android:textSize="30sp"
+            android:layout_marginTop="-60dp"
+            android:textColor="@color/white"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_main"
+            android:layout_width="280sp"
+            android:layout_height="60dp"
+            android:layout_marginTop="100sp"
+            android:layout_marginBottom="25sp"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/yusei_magic"
+            android:textColor="@android:color/black"
+            android:background="@drawable/card"/>
+
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_login_main"-->
+<!--            android:layout_width="280sp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="100sp"-->
+<!--            android:layout_marginBottom="25sp"-->
+<!--            android:text="@string/login"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20sp"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:fontFamily="@font/yusei_magic"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:background="@drawable/card" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_register_main"-->
+<!--            android:layout_width="280sp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:text="@string/register"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20sp"-->
+<!--            android:fontFamily="@font/yusei_magic"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:background="@drawable/card"/>-->
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register_main"
+            android:layout_width="280sp"
+            android:layout_height="60dp"
+            android:text="@string/register"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/yusei_magic"
+            android:textColor="@android:color/black"
+            android:background="@drawable/card"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

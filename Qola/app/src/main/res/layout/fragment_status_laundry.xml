@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary"
+    tools:context=".StatusLaundryFragment">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/iv_back_status_laundry"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:src="@drawable/back_black"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:importantForAccessibility="no" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:importantForAccessibility="no" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/card_background"
+            android:gravity="center"
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/layanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/laundry"
+                android:fontFamily="@font/yusei_magic"
+                android:textSize="30sp"
+                android:layout_marginBottom="480dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="90dp"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/diambil"
+                    android:layout_width="330dp"
+                    android:layout_height="70dp"
+                    app:cardCornerRadius="10dp"
+                    android:background="@color/black">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/diambil"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diambil"
+                        android:fontFamily="@font/yusei_magic"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_marginStart="90dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dicuci"
+                    android:layout_width="330dp"
+                    android:layout_height="70dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/dicuci"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dicuci"
+                        android:fontFamily="@font/yusei_magic"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_marginStart="90dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/disetrika"
+                    android:layout_width="330dp"
+                    android:layout_height="70dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/disetrika"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disetrika"
+                        android:fontFamily="@font/yusei_magic"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_marginStart="90dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/diantar"
+                    android:layout_width="330dp"
+                    android:layout_height="70dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/diantar"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:importantForAccessibility="no" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diantar"
+                        android:fontFamily="@font/yusei_magic"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_marginStart="90dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:id="@+id/btn_kembali_status"
+                android:layout_marginTop="460sp"
+                android:text="@string/kembali"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/yusei_magic"
+                android:background="@drawable/card"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/white"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+

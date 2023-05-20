@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".LayananFragment">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/iv_back_layanan"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:src="@drawable/back_black"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:importantForAccessibility="no" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/card_blue"
+            android:layout_centerVertical="true"
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/layanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/masukkan_keterangan"
+                android:fontFamily="@font/yusei_magic"
+                android:textSize="30sp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true">
+            </TextView>
+
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layanan"
+                tools:context=".MainActivity">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/jenis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:hint="@string/barang"
+                    android:labelFor="@id/barang"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/barang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/yusei_magic"
+                        android:background="@drawable/card"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="180dp"
+                tools:context=".MainActivity">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:hint="@string/paket"
+                    android:labelFor="@id/paket_laundry"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                    <AutoCompleteTextView
+                        android:layout_gravity="center"
+                        android:id="@+id/paket_laundry"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/card"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/yusei_magic"
+                        android:inputType="none"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="255dp"
+                tools:context=".MainActivity">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:hint="@string/antar_jemput"
+                    android:labelFor="@id/paket_laundry"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                    <AutoCompleteTextView
+                        android:layout_gravity="center"
+                        android:id="@+id/antar"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/card"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/yusei_magic"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="331dp"
+                tools:context=".MainActivity">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:hint="@string/berat"
+                    android:labelFor="@id/paket_laundry"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                    <AutoCompleteTextView
+                        android:layout_gravity="center"
+                        android:id="@+id/berat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/yusei_magic"
+                        android:inputType="none"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:id="@+id/next"
+                android:layout_marginTop="500sp"
+                android:text="@string/lanjutkan"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/yusei_magic"
+                android:background="@drawable/card"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/white"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_menu"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.qola.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.qola.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.qola.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.example.qola.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_pilihLayananFragment"
+            app:destination="@id/pilihLayananFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_statusLaundryFragment"
+            app:destination="@id/statusLaundryFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pilihLayananFragment"
+        android:name="com.example.qola.PilihLayananFragment"
+        android:label="fragment_pilih_layanan"
+        tools:layout="@layout/fragment_pilih_layanan" >
+        <action
+            android:id="@+id/action_pilihLayananFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+        <action
+            android:id="@+id/action_pilihLayananFragment_to_layananFragment"
+            app:destination="@id/layananFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statusLaundryFragment"
+        android:name="com.example.qola.StatusLaundryFragment"
+        android:label="fragment_status_laundry"
+        tools:layout="@layout/fragment_status_laundry" >
+        <action
+            android:id="@+id/action_statusLaundryFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+        <action
+            android:id="@+id/action_statusLaundryFragment_to_layananFragment"
+            app:destination="@id/layananFragment" />
+        <action
+            android:id="@+id/action_statusLaundryFragment_to_statusFragment"
+            app:destination="@id/statusFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/layananFragment"
+        android:name="com.example.qola.LayananFragment"
+        android:label="fragment_layanan"
+        tools:layout="@layout/fragment_layanan" >
+        <action
+            android:id="@+id/action_layananFragment_to_pilihLayananFragment"
+            app:destination="@id/pilihLayananFragment" />
+        <action
+            android:id="@+id/action_layananFragment_to_totalFragment"
+            app:destination="@id/totalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.example.qola.OTPFragment"
+        android:label="fragment_o_t_p"
+        tools:layout="@layout/fragment_o_t_p" >
+        <action
+            android:id="@+id/action_OTPFragment_to_statusFragment"
+            app:destination="@id/statusFragment" />
+        <action
+            android:id="@+id/action_OTPFragment_to_totalFragment"
+            app:destination="@id/totalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/totalFragment"
+        android:name="com.example.qola.TotalFragment"
+        android:label="fragment_total"
+        tools:layout="@layout/fragment_total" >
+        <action
+            android:id="@+id/action_totalFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment" />
+        <action
+            android:id="@+id/action_totalFragment_to_layananFragment"
+            app:destination="@id/layananFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.example.qola.StatusFragment"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_status" >
+        <action
+            android:id="@+id/action_statusFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment" />
+        <action
+            android:id="@+id/action_statusFragment_to_statusLaundryFragment"
+            app:destination="@id/statusLaundryFragment" />
+        <action
+            android:id="@+id/action_statusFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+</navigation>

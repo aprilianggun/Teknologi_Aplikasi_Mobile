@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/fragment_total"
+    tools:context=".TotalFragment">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/iv_back_total"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:src="@drawable/back_black"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:importantForAccessibility="no" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/card_blue"
+            android:layout_centerVertical="true"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:fontFamily="@font/yusei_magic"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"/>
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/tv_total"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/card"
+                android:layout_centerHorizontal="true"
+                android:importantForAccessibility="no" />
+
+            <TextView
+                android:id="@+id/biaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/harga"
+                android:textColor="@color/black"
+                android:fontFamily="@font/yusei_magic"
+                android:layout_below="@id/tv_total"
+                android:layout_marginTop="42dp"
+                android:textSize="30sp"/>
+
+
+            <TextView
+                android:id="@id/metode"
+                android:layout_below="@+id/biaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/method"
+                android:layout_marginTop="90dp"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/yusei_magic"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_below="@+id/metode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pembayarannya"
+                android:layout_marginTop="10dp"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/yusei_magic"
+                android:layout_centerHorizontal="true"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:id="@+id/btn_qopay_payment"
+                android:layout_marginTop="460sp"
+                android:text="@string/qopay"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/yusei_magic"
+                android:background="@drawable/card"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/white"
+                android:layout_centerHorizontal="true"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:id="@+id/btn_cod"
+                android:layout_marginTop="30sp"
+                android:text="@string/cod"
+                android:layout_below="@id/btn_qopay_payment"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/yusei_magic"
+                android:background="@drawable/card"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/white"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
